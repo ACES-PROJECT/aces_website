@@ -68,13 +68,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="banner-top">
 				<h1><font size="6">Register for Acunetix 2k15</font></h1>
 				<div class="banner-bottom">
+				<form action = "regMailSender.php" method="post">
 					<div class="bnr-one">
 						<div class="bnr-left">
 							<p>Name</p>
 						</div>
 						<div class="bnr-right">
 							<!--<input class="date" id="datepicker" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=>-->
-							<input type = "text" placeholder = "Abc Xyz">
+							<input type = "text" placeholder = "Abc Xyz" name="name_of_candidate">
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -84,7 +85,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="bnr-right">
 							<!--<input class="date" id="datepicker1" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=>-->
-                            <input type = "text" placeholder= "+9188888888">
+                            <input type = "text" placeholder= "+9188888888" name="contact_of_candidate">
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -93,7 +94,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<p>Event</p>
 						</div>
 						<div class="bnr-right">
-							<select>
+							<select name="event_of_candidate">
 								<option  class="rm" value="code-dek">Code-Dek</option>
 								<option  class="rm" value="braniac">Braniac</option>
 								<option  class="rm" value="picaso">Picaso</option>
@@ -109,15 +110,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<p>Email</p>
 						</div>
 						<div class="bnr-right">
-						<input type = "text" placeholder= "abc.xyz@domain.com">
+						<input type = "text" placeholder= "abc.xyz@domain.com" name="email_of_candidate">
 						</div>
 						<div class="clearfix"></div>
 					</div>
 					<div class="bnr-btn">
-						<form>
+						
 							<input type="submit" value="Register">
-						</form>
+						
 					</div>
+					</form>
 				</div>
 			</div>
 		</div>

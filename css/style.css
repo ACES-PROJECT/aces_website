@@ -68,7 +68,7 @@ body a:hover{
 	-ms-transition: 0.5s all ease;
 }
 .header {
-	background: #403f45;
+	background: #010740;
 }
 ul.navig {
 	padding: 0;
@@ -402,7 +402,7 @@ select {
 }
 .how {
 	padding: 6em 0px;
-	background: rgba(20, 20, 20, 0.960784);
+	background: #000018;
 }
 .how-right p {
 	margin-top: 4%;
@@ -785,7 +785,7 @@ p.admin {
 /*--footer-start--*/
 .footer{
 	padding:4em 0px;
-	background:#403f45;
+	background:#151b54;
 }
 .footer-top {
 	text-align: center;
