@@ -19,12 +19,7 @@ $mail->Port = 465;
 $mail->header = 'Content-type: text/html;  charset=iso-8859-1';
 
 //Done Connecting
-
-	//Extracting Token No
-	$myfile = fopen("token.txt", "r") or die("Unable to open file!");
-	$token = fread($myfile,filesize("token.txt"));
-	fclose($myfile);
-
+	
 //Handling Game Events for token generation
 $event = $_POST['event_of_candidate'];
 if($event[0] == "G")
@@ -44,6 +39,9 @@ $mail->addReplyTo('aces.proxy.mail@gmail.com','Reply Address');
 $mail->addAddress('aces.acunetix15@gmail.com','Acunetix 2k15');
 $mail->addAddress('aces.proxy.mail@gmail.com','Acunetix 2k15');
 
+if($_POST['contact_of_candidate'])
+	$token = $_POST['contact_of_candidate'][4]+$_POST['contact_of_candidate'][6]+$_POST['contact_of_candidate'][7];
+
 $body = "<br><b>Name:</b> ".$_POST['name_of_candidate']."<br><b>Contact:</b>".$_POST['contact_of_candidate']."<br><b>Event: </b>".$_POST['event_of_candidate']."<br><b>Email:</b>".$_POST["email_of_candidate"];
 $mail->Subject = "Registration:  ".$_POST['event_of_candidate'];
 $mail->Body = "<b>#Registration:</b><br>".$body."<br><b>Token: </b>ACX15".$event.$token;
@@ -58,13 +56,6 @@ else
 	echo " ";
     echo "<b><h3>Registration SUCCESSFUL!</h3></b><br>";
 	echo "Your Token Number Is:<b> ACX15".$event.$token."</b>";
-
-	//Writing the next token number into the token file
-	$myfile = fopen("token.txt", "w") or die("Unable to open file!");
-	$token++;
-	fwrite($myfile, $token);
-	fclose($myfile);
-	
 	
 	//Displaying Extra Content
 	

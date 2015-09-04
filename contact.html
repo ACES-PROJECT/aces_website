@@ -30,6 +30,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--start-smoth-scrolling-->
 </head>
 <body>
+
+
+
 	<!--start-header-->
 	<div class="header" id="home">
 		<div class="container">
@@ -60,6 +63,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 		</script>
 	<!--script-for-menu-->
+	
+	<?php
+		//$_SESSION['mail_sent'] = 0;
+	?>
 	<!--start-contact-->
 	<div class="contact">
 		<div class="container">
@@ -67,18 +74,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h3>CONTACT US</h3>
 			</div>
 			<div class="contact-bottom">
-				<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" />
-				<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
-				<input type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" />
-				<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>
+			<form action = "contactMailer.php" method="post">
+				<input type="text" value="Name" name="name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" />
+				<input type="text" value="Email" name="email"onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
+				<input type="text" value="Phone" name="phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" />
+				<textarea value="Message:" name="message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>
 				<div class="submit-btn">
-					<form>
-						<input type="submit" value="SUBMIT">
-					</form>
+				<input type="submit" value="SUBMIT">
 				</div>
+			</form>
 			</div>
 		</div>
 	</div>
+	
+	<!--<?php
+		if($_SESSION['mail_sent'])
+		{
+			echo "<script type = 'text/javascript'> window.alert('Message Sent Successfully!');</script>";
+			$_SESSION['mail_sent'] = 0;
+		}
+		
+	?> -->
 	<!--end-contact-->
 	<!--start-map-->
 	<div class="map">
@@ -100,6 +116,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</ul>
 			</div>
 			<div class="footer-top">
+				<p class="footer-class">Contact Us: +917350002171 | +91727600288</p>
+				<br>
 				<p class="footer-class">© 2015 ACES All Rights Reserved | Designed by  <a href="https://in.linkedin.com/in/amitection">Amit Prasad</a>, <a href="https://www.linkedin.com/pub/rushikesh-butley/b1/427/811">Rushikesh Butley</a></p>
 				<p>&nbsp &nbspEdited by Nabanita Banerjee</p>
 			</div>
@@ -124,3 +142,4 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!--end-footer-->
 </body>
 </html>
+
