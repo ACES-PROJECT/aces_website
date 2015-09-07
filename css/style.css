@@ -68,7 +68,7 @@ body a:hover{
 	-ms-transition: 0.5s all ease;
 }
 .header {
-	background: #403f45;
+	background: #010740;
 }
 ul.navig {
 	padding: 0;
@@ -252,7 +252,7 @@ ul.navig li a.active{
 	position: absolute;
 	width: 35%;
 	padding: 2em 30px;
-	background: rgba(228, 232, 246, 0.56);
+	background: rgba(139, 139, 122, 0.56);
 	top: 20.5%;
 	left: 13.5%;
 }
@@ -302,7 +302,7 @@ select {
 }
 .bnr-right input[type="text"] {
 	width: 95%;
-	color: #9E9E9E;
+	color: #6A6A6A;
 	outline: none;
 	font-family: 'Lato', sans-serif;
 	font-size: 14px;
@@ -370,7 +370,7 @@ select {
 	margin-top: 1%;
 	font-size: 15px;
 	line-height: 1.6em;
-	color: #AFAFAF;
+	color: #6A6A6A;
 }
 .why-left p label {
 	font-weight: 700;
@@ -402,7 +402,7 @@ select {
 }
 .how {
 	padding: 6em 0px;
-	background: rgba(20, 20, 20, 0.960784);
+	background: #000018;
 }
 .how-right p {
 	margin-top: 4%;
@@ -451,7 +451,7 @@ select {
 	margin-top: 3%;
 	font-size: 15px;
 	line-height: 1.6em;
-	color: #AFAFAF;
+	color: #6A6A6A;
 }
 /*--secure-end--*/
 /*--touch-start--*/
@@ -602,7 +602,7 @@ select {
 	margin-top: 2%;
 	font-size: 15px;
 	line-height: 1.6em;
-	color: #AFAFAF;
+	color: #6A6A6A;
 }
 .services-one ul{
 	padding:0;
@@ -616,7 +616,7 @@ select {
 	margin: 0px 0px 12px 18px;
 }
 .services-one ul li a{
-	color: #AFAFAF;
+	color: #6A6A6A;
 	font-size: 16px;
 }
 .services-one ul li a:hover{
@@ -660,7 +660,7 @@ select {
 	margin-top: 3%;
 	font-size: 15px;
 	line-height: 1.6em;
-	color: #AFAFAF;
+	color: #6A6A6A;
 }
 .add-left ul{
 	padding:0;
@@ -671,7 +671,7 @@ select {
 	margin: 0px 0px 12px 18px;
 }
 .add-left ul li a {
-	color: #AFAFAF;
+	color: #6A6A6A;
 	font-size: 16px;
 }
 .add-left ul li a:hover {
@@ -690,7 +690,7 @@ select {
 	margin-top: 4%;
 	font-size: 15px;
 	line-height: 1.6em;
-	color: #AFAFAF;
+	color: #6A6A6A;
 }
 .test-left h4 {
 	font-size: 1.2em;
@@ -703,7 +703,7 @@ select {
 /*--news-start--*/
 .news {
 	padding: 6em 0px;
-	background: rgba(64, 63, 69, 0.1);
+	
 }
 .news-top{
 	text-align:center;
@@ -732,13 +732,13 @@ select {
 p.admin {
 	margin-top: 1.5%;
 	font-size: 15px;
-	color: #AFAFAF;
+	color: #6A6A6A;
 }
 .n-right p{
 	margin-top: 2%;
 	font-size: 15px;
 	line-height: 1.6em;
-	color: #AFAFAF;
+	color: #6A6A6A;
 }
 .news-one:nth-child(2){
 	margin-top:4%;
@@ -767,7 +767,7 @@ p.admin {
 }
 .event-btm h4 {
 	font-size: 18px;
-	color: #fff;
+	color: #E5E4E2;
 	font-weight: 700;
 	padding: 15px 22px;
 	margin: 0;
@@ -778,14 +778,14 @@ p.admin {
 	margin-top: 4%;
 	font-size: 15px;
 	line-height: 1.6em;
-	color: #AFAFAF;
+	color: #6A6A6A;
 	text-align: center;
 }
 /*--events-end--*/
 /*--footer-start--*/
 .footer{
 	padding:4em 0px;
-	background:#403f45;
+	background:#151b54;
 }
 .footer-top {
 	text-align: center;
@@ -831,7 +831,7 @@ h3.ghj {
 .about-bottom p{
 	font-size: 15px;
 	line-height: 1.6em;
-	color: #AFAFAF;
+	color: #6A6A6A;
 }
 .about-bottom p:nth-child(2){
 	width:90%;
